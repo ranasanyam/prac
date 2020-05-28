@@ -1,6 +1,12 @@
 body{
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	box-sizing: border-box;
+}
+header{
+	color: white;
+	background-color: #bb86d9!important;
+}
+.footer{
+	background-color: #d6c3e0;
 }
