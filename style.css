@@ -1,12 +1,30 @@
 body{
 	margin: 0;
-	padding: 0;
+	padding: 50px;
 	box-sizing: border-box;
+	z-index: 0;
 }
+
 header{
 	color: white;
 	background-color: #bb86d9!important;
 }
 .footer{
 	background-color: #d6c3e0;
+}
+.navbar-dark {
+	background-color: #512da8;
+}
+.container-fluid .row-content{
+	margin: 10% 2rem!important;
+}
+.container .row-content{
+	border: 1px solid grey;
+
+}
+.tab-content{
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	padding:10px;
 }
