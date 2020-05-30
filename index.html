@@ -48,11 +48,95 @@
                         </a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in" style="cursor:pointer;">Login</span>
+                    </a>
+                </span>
+
             </div>
 
         </div>
         
     </nav>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">                         
+                    <div class="col-10">
+                        <h3 class="py-4 pl-4">Reserve a Table</h3>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <form id="form">
+                            <div class="form-group row">
+                                <div class="col-md-10  d-flex my-2">
+                                    <h3 class="col-md-4 py-2">Number of Guests</h3>
+                                    <div class="form-check-inline mr-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">1
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline mr-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">2
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline mr-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">3
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline mr-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">4
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline mr-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">5
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline mr-3">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">6
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-10 d-flex my-3">
+                                    <h3 class="col-4 py-2">Section</h3>
+                                    <div class="col-auto">
+                                        <a href="#" type="button" class="text-white bg-success selected py-2 px-4">Non-smoking</a>
+                                        <a href="#" class=" text-white bg-danger py-2 px-4 border-none" type="button">Smoking</a>
+                                    </div>
+                                </div>
+                                <div class="col-10  d-flex my-3">
+                                    <h3 class="col-4 py-2">Date and Time</h3>
+                                    <div class="col-5">
+                                        <input type="text" name="date" placeholder="Date" class="form-control" id="date" value="">
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="text" name="date" placeholder="Time" class="form-control" id="date" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-3">
+                                    <button type="cancel" class="btn btn-secondary dismiss ml-5 py-2 px-4">Cancel</button>
+                                    <button type="submit" class="btn btn-primary py-2 px-4">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container-fluid">
@@ -65,13 +149,64 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-auto mx-auto align-self-center">
-                    <a href="#form"><button class="bg-warning py-2 px-4">Reserve Table</button></a>
+                    <a href="#reserveform" role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container-fluid">
+        <div class="row row-content">
+            <div class="col">
+                <div class="carousel slide" id="mycarousel" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="img/uthappizza.png" class="d-block img-fluid" alt="Uthappizza">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span>
+                                   <span class="badge badge-pill badge-secondary">$4.99</span>
+                                </h2>
+                                <p class="d-none d-sm-block">
+                                A unique combination of Indian Uthappam (pancake) and italian pizza, topped with Cerignoia olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Panner.
+                                </p> 
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/buffet.png" class="d-block img-fluid" alt="buffet">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Weekend Grand Buffet<span class="badge badge-danger text-white">New</span></h2>
+                        
+                                <p class="d-none d-sm-block">
+                                Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/alberto.png" class="d-block img-fluid" alt="alberto">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="mt-0">Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p class="d-none d-sm-block">
+                                Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active">
+                        </li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+                <a href="#mycarousel" role="button" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#mycarousel" role="button" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
         <!--
         <div class="row">
             <div class="col-12">
