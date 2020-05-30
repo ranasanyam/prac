@@ -40,3 +40,9 @@ header{
 	left: 0;
 	min-height: 300px;
 }
+#carouselButton{
+	right: 15px;
+	bottom: 0px;
+	position: absolute;
+	z-index: 5;
+}
